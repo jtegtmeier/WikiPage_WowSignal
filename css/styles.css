@@ -1,6 +1,7 @@
+
 body {
 	background:darkslategray;
-        padding:10px;
+        padding:.625em;
 }
 
 header{
@@ -17,11 +18,21 @@ h1{
 
 h3{
     color:#003300;
+    font-size: 1.5em;
+}
+
+p{
+    font-size: 1em;
+}
+
+li{
+    font-size: 1em;
 }
 
 img{
     box-shadow: 5px 5px 3px black;
     border: solid 2px;
+    max-width: 100%;
 }
 
 a:link {
@@ -34,4 +45,42 @@ a:link {
 
 #whiteback{
     background: white;
+}
+
+.grid_1 { width: 15.625%; } /* 125px/800px = 15.625% */
+.grid_2 { width: 32.5%; } /* 260px/800px = 32.5% */
+.grid_3 { width: 48.375%; } /* 395px/800px = 49.375% */
+.grid_4 { width: 65.625%; } /* 525px/800px = 65.625% */
+.grid_5 { width: 83.125%; } /* 665px/800px = 83.125% */
+.grid_6 { width: 100%; } /* 800px/800px = 100% */
+
+.grid_1,
+.grid_2,
+.grid_3,
+.grid_4,
+.grid_5,
+.grid_6 {
+  margin-right: 1.25%;
+  float: left;
+  display: block;
+}
+.alpha { margin-left:0; }
+.omega {margin-right:0; }
+
+.container_6{
+  width: 90%;
+  max-width: 800px;
+  padding: 4% 0;
+  margin: auto;
+}
+
+@media screen and (max-width : 480px) {
+    .grid_1,
+    .grid_2,
+    .grid_3,
+    .grid_4,
+    .grid_5,
+    .grid_6 {
+        width: 100%
+    }
 }
